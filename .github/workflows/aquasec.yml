@@ -32,6 +32,7 @@ jobs:
         run:  pwd &&
               ls -l . &&
               ls -l / &&
+              find / -iname "*github*"
               git config --global --add safe.directory /github/workspace
        
       - name: Aqua code scanning(SCA,IaC and SAST)
