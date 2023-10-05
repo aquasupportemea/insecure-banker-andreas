@@ -29,7 +29,8 @@ jobs:
           aqua-secret: ${{ secrets.AQUA_SECRET }}
 
       - name: List files
-        run: ls -l .
+        run: pwd
+        run: ls -la .
        
       - name: Aqua code scanning(SCA,IaC and SAST)
         uses: docker://aquasec/aqua-scanner
